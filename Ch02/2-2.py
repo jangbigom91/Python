@@ -106,3 +106,8 @@ print('a :', a.strip())
 # 문자열 바꾸기(replace)
 a = "Life is too short"
 print('a :', a.replace("Life", "Your leg"))
+
+# 문자열 나누기(split)
+a = "Life is too short"
+a.split()
+print('a :', a)
