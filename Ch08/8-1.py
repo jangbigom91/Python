@@ -21,4 +21,4 @@ conn.commit()
 # 데이터베이스 종료
 conn.close()
 
-print('INSERT 완료,,,')
+print('INSERT 완료...')

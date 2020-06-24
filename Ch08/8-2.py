@@ -10,11 +10,11 @@ cur = conn.cursor()
 cur.execute("SELECT * FROM `USER1`")
 
 for row in cur.fetchall():
-    print('--------------------')
+    print('---------------------')
     print('아이디 :', row[0])
     print('이름 :', row[1])
     print('휴대폰 :', row[2])
     print('나이 :', row[3])
-    print('--------------------')
+    print('---------------------')
 
 conn.close()
