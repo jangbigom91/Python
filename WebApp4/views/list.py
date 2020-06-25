@@ -14,9 +14,8 @@ def list():
 
     # 쿼리문 실행 객체 생성
     cur = conn.cursor()
-
     # 쿼리문 실행
-    cur.execute("SELECT * FROM `USER``")
+    cur.execute("SELECT * FROM `USER1`")
     conn.commit()
 
     users = []

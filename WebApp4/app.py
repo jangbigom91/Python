@@ -17,5 +17,6 @@ app.register_blueprint(list_blueprint)
 def index():
     return redirect('/register')
 
+
 if __name__=='__main__':
     app.run()

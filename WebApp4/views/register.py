@@ -3,13 +3,14 @@ import pymysql as db
 
 register_blueprint = Blueprint('register', __name__)
 
+
 @register_blueprint.route('/register', methods=['GET'])
 def register1():
     return render_template('/register.html')
 
+
 @register_blueprint.route('/register', methods=['POST'])
 def register2():
-
     # 파라미터 수신
     uid = request.form['uid']
     name = request.form['name']
@@ -25,9 +26,8 @@ def register2():
 
     # 쿼리문 실행 객체 생성
     cur = conn.cursor()
-
     # 쿼리문 실행
-    sql = "INSERT INTO `USER3` VALUES ('%s', '%s', '%s', '%s')"
+    sql = "INSERT INTO `USER1` VALUES ('%s', '%s', '%s', '%s')"
     cur.execute(sql % (uid, name, hp, age))
     conn.commit()
 
